@@ -9,17 +9,16 @@ import cartopy.feature as cfeature
 import matplotlib.pyplot as plt
 import numpy as np
 
-date = "20220901" # 8桁の数字で入力する
-time = "1700" # 協定世界時刻であることに注意。つまり，日本時間はこれよりも9時間進んでいる
-band = "tir" # バンド名 vis, tir 
-ch = "01" # チャンネル番号
+date = "20200707" 
+time = "0300"     # GMT
+band = "tir"      # バンド名 vis, tir 
+ch = "01"         # チャンネル番号
 
-# 最大，最小の緯度と経度，縦横の画素数
-lon_min = 85
+lon_min = 85      # 緯度と経度
 lon_max = 205
 lat_min = -60
 lat_max = 60
-n = 6000
+n = 6000          # 縦横の画素数
 
 extent_hmwr = (lon_min, lon_max, lat_min, lat_max)
 
@@ -50,7 +49,6 @@ mapcrs = ccrs.NorthPolarStereo(central_longitude=140.0, true_scale_latitude=60.0
 
 ax = fig.add_axes([0.10, 0.10, 0.75, 0.75], projection=mapcrs)
 
-
 # 海岸線や国境を描画する
 ax.add_feature(cfeature.COASTLINE, linewidth=0.5, color="green")
 ax.add_feature(cfeature.BORDERS, linewidth=0.5, linestyle=':', color="green")
@@ -60,7 +58,6 @@ ax.set_extent([117.0, 156.0, 18.0, 61.0], ccrs.PlateCarree())
 
 # ひまわり衛星画像の描画
 ax.imshow(data_tbb, origin='upper', extent=extent_hmwr, interpolation='none',cmap="gray_r", transform=ccrs.PlateCarree())
-
 ax.gridlines(xlocs=np.arange(100, 180, 10), 
              ylocs=np.arange(10, 90, 10),
              linestyle='dashed', color='green', linewidth=0.5)

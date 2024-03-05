@@ -1,0 +1,3 @@
+import wget
+file ='ftp://hmwr829gr.cr.chibau.ac.jp/gridded/FD/V20190123/202007/TIR/202007070300.tir.01.fld.geoss.bz2'
+wget.download(file)
