@@ -2,6 +2,16 @@
 ._*
 .DS_Store
 
+# Jupyter notebook
+.ipynb_checkpoints/
+
+# data folder
+data/
+
+# python data
+*.npy
+*.npz
+
 # Prerequisites
 *.d
 
