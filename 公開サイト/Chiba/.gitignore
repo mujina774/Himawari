@@ -1,0 +1,31 @@
+# Apple files
+._*
+.DS_Store
+
+# data folder
+data2016\
+data\
+
+# data
+*.bz2
+*.gioss
+
+# upyter notebook
+.ipynb_checkpoints/
+
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+

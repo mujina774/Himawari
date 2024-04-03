@@ -2,20 +2,17 @@
 ._*
 .DS_Store
 
-# Prerequisites
-*.d
+# data folder
+公開サイト\Chiba\data2016\
+公開サイト\Chiba\data\
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# data
+*.bz2
+*.gioss
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# upyter notebook
+.ipynb_checkpoints/
+
 
 # Shared objects (inc. Windows DLLs)
 *.dll
