@@ -2,9 +2,24 @@
 ._*
 .DS_Store
 
+<<<<<<< HEAD
 # data folder
 公開サイト\Chiba\data2016\
 公開サイト\Chiba\data\
+=======
+# Jupyter notebook
+.ipynb_checkpoints/
+
+# data folder
+data/
+
+# python data
+*.npy
+*.npz
+
+# Prerequisites
+*.d
+>>>>>>> 52b62c47f19bb92b6f8a6dd1f04568fc844ea4c2
 
 # data
 *.bz2
